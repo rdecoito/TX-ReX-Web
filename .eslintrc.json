@@ -1,0 +1,38 @@
+{
+	"root": true,
+	"parser": "@typescript-eslint/parser",
+	"extends": [
+		"eslint:recommended",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:jest/recommended"
+	],
+	"rules": {
+		"indent": [2, "tab"],
+		"brace-style": [2, "1tbs"],
+		"semi": [2, "always"],
+		"no-unreachable": 2,
+		"prefer-const": 2,
+		"prefer-destructuring": 2,
+		"no-use-before-define": 0,
+		"no-undef": 0,
+		"eol-last": 2,
+		"camelcase": 2,
+		"max-len": [2, {
+			"code": 140,
+			"ignoreUrls": true
+		}],
+		"@typescript-eslint/no-use-before-define": 2,
+		"@typescript-eslint/explicit-module-boundary-types": 0,
+		"react/jsx-filename-extension": [
+			1,
+			{
+				"extensions": [".tsx"]
+			}
+		]
+	},
+	"plugins": [
+		"@typescript-eslint",
+		"react",
+		"jest"
+	]
+}
